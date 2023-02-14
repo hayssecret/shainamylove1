@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Valentine's Day!</title>
+	<style>
+		#heart {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+			border-radius: 50%;
+			animation: heartbeat 1s infinite;
+		}
+
+		@keyframes heartbeat {
+			0% {
+				transform: scale(0.9);
+			}
+			50% {
+				transform: scale(1.1);
+			}
+			100% {
+				transform: scale(0.9);
+			}
+		}
+
+		#message {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 20px;
+			font-weight: bold;
+			color: pink;
+			text-align: center;
+			margin: 20px 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="heart"></div>
+	<div id="message">Happy Valentine's Day Shaina! I LOVE YOUUUU&lt;3</div>
+</body>
+</html>
